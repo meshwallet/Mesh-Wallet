@@ -9,19 +9,23 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
 </p>
 
 <p align="center">
-  <table align="center" border="0" cellspacing="16" cellpadding="0">
+  <table align="center" border="0" cellspacing="12" cellpadding="0">
     <tr>
-      <td align="center">
-        <a href="https://meshwallet.app"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/icons/globe.png" alt="" width="16" height="16"> Website</a>
+      <td align="center" valign="middle">
+        <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229">
+          <img alt="Download on the App Store" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" height="44">
+        </a>
       </td>
-      <td align="center">
-        <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/icons/apple.png" alt="" width="16" height="16"> App Store</a>
+      <td align="center" valign="middle">
+        <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf">
+          <img alt="Available in the Chrome Web Store" src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/chrome-web-store.png" height="44">
+        </a>
       </td>
-      <td align="center">
-        <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/icons/chrome.png" alt="" width="16" height="16"> Chrome</a>
+      <td align="center" valign="middle">
+        <a href="https://meshwallet.app">meshwallet.app</a>
       </td>
-      <td align="center">
-        <a href="https://meshwallet.app/support"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/icons/support.png" alt="" width="16" height="16"> Support</a>
+      <td align="center" valign="middle">
+        <a href="https://meshwallet.app/support">Support</a>
       </td>
     </tr>
   </table>
