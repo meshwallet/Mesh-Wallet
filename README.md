@@ -9,10 +9,19 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
 </p>
 
 <p align="center">
-  <a href="https://meshwallet.app"><img src="https://img.shields.io/badge/Website-meshwallet.app-111111?style=for-the-badge" alt="Website"></a>
-  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://img.shields.io/badge/App_Store-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="App Store"></a>
-  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome extension"></a>
-  <a href="https://meshwallet.app/support"><img src="https://img.shields.io/badge/Support-Help-333333?style=for-the-badge" alt="Support"></a>
+  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229">
+    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="44">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf">
+    <img src="https://storage.googleapis.com/web-dev-uploads/image/WlXD8FqE2dG91ppF4Fuh.svg" alt="Available in the Chrome Web Store" height="44">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://meshwallet.app"><strong>meshwallet.app</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://meshwallet.app/support">Support</a>
 </p>
 
 ---
