@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="118" height="44" role="img" aria-label="Website">
-  <rect width="118" height="44" fill="#212121"/>
-  <text x="59" y="28" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="600" text-anchor="middle">Website</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="44" role="img" aria-label="Website">
+  <rect width="136" height="44" fill="#212121"/>
+  <g transform="translate(14 10)" fill="#ffffff">
+    <path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm8.93 6h-2.08a6.99 6.99 0 0 0-5.62-3.17V1.07A8.99 8.99 0 0 1 18.93 6zM10 18c-1.1 0-2-.9-2-2h4c0 1.1-.9 2-2 2zm4.24-4H5.76A7.96 7.96 0 0 1 5 10c0-.69.09-1.36.24-2h9.52c.15.64.24 1.31.24 2s-.09 1.36-.24 2zM10 2.07V5.1A6.99 6.99 0 0 0 4.15 8.2H2.07A8.99 8.99 0 0 1 10 2.07zM2.07 12h2.08A6.99 6.99 0 0 0 10 15.9v3.03A8.99 8.99 0 0 1 2.07 12zM11 18.97v-3.03A6.99 6.99 0 0 0 16.85 12.8h2.08A8.99 8.99 0 0 1 11 18.97z"/>
+  </g>
+  <text x="42" y="28" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="600">Website</text>
 </svg>

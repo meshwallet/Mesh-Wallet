@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="112" height="44" role="img" aria-label="Support">
-  <rect width="112" height="44" fill="#333333"/>
-  <text x="56" y="28" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="600" text-anchor="middle">Support</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="44" role="img" aria-label="Support">
+  <rect width="132" height="44" fill="#333333"/>
+  <g transform="translate(14 10)" fill="#ffffff">
+    <path d="M10 0C4.48 0 0 4.48 0 10s4.48 10 10 10 10-4.48 10-10S15.52 0 10 0zm1 15h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+  </g>
+  <text x="42" y="28" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="600">Support</text>
 </svg>
