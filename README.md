@@ -9,14 +9,13 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
 </p>
 
 <p align="center">
-  <table align="center" border="0" cellspacing="6" cellpadding="0">
-    <tr>
-      <td align="center"><a href="https://meshwallet.app"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/website.png" alt="Website" height="32"></a></td>
-      <td align="center"><a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/app-store.png" alt="App Store" height="32"></a></td>
-      <td align="center"><a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/chrome.png" alt="Chrome" height="32"></a></td>
-      <td align="center"><a href="https://meshwallet.app/support"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/support.png" alt="Support" height="32"></a></td>
-    </tr>
-  </table>
+  <a href="https://meshwallet.app"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/icons/globe.png" alt="" width="16" height="16"> Website</a>
+  &nbsp;·&nbsp;
+  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/icons/apple.png" alt="" width="16" height="16"> App Store</a>
+  &nbsp;·&nbsp;
+  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/icons/chrome.png" alt="" width="16" height="16"> Chrome</a>
+  &nbsp;·&nbsp;
+  <a href="https://meshwallet.app/support"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/icons/support.png" alt="" width="16" height="16"> Support</a>
 </p>
 
 ---

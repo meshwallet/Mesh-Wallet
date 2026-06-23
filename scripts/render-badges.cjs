@@ -2,13 +2,12 @@ const fs = require('fs');
 const path = require('path');
 const { Resvg } = require('@resvg/resvg-js');
 
-const dir = path.join(__dirname, '..', 'public', 'badges');
-const files = ['website', 'app-store', 'chrome', 'support'];
+const iconDir = path.join(__dirname, '..', 'public', 'badges', 'icons');
+const icons = ['globe', 'apple', 'chrome', 'support'];
 
-for (const name of files) {
-  const svg = fs.readFileSync(path.join(dir, `${name}.svg`), 'utf8');
-  const resvg = new Resvg(svg, { fitTo: { mode: 'height', value: 64 } });
-  const png = resvg.render().asPng();
-  fs.writeFileSync(path.join(dir, `${name}.png`), png);
+for (const name of icons) {
+  const svg = fs.readFileSync(path.join(iconDir, `${name}.svg`), 'utf8');
+  const resvg = new Resvg(svg, { fitTo: { mode: 'height', value: 32 } });
+  fs.writeFileSync(path.join(iconDir, `${name}.png`), resvg.render().asPng());
   console.log(`wrote ${name}.png`);
 }

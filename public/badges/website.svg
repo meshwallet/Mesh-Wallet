@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 32" width="104" height="32" role="img" aria-label="Website">
-  <rect width="104" height="32" fill="#161616"/>
-  <g transform="translate(10 9)" stroke="#ffffff" stroke-width="1.4" fill="none" stroke-linecap="round">
-    <circle cx="7" cy="7" r="6.2"/>
-    <ellipse cx="7" cy="7" rx="3.1" ry="6.2"/>
-    <path d="M1 7h12M7 1v12"/>
-  </g>
-  <text x="30" y="16" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" dominant-baseline="central">Website</text>
-</svg>
