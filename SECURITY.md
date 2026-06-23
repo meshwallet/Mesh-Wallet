@@ -35,3 +35,5 @@ We aim to acknowledge reports within 72 hours.
 - USDT on TRC-20 only — no arbitrary contract execution surface.
 
 More: [meshwallet.app/security](https://meshwallet.app/security)
+
+Release versions: [versions.json](versions.json).
