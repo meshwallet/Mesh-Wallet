@@ -33,7 +33,12 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
 | **Network** | TRON (TRC-20) |
 | **Asset** | USDT |
 | **Custody** | Non-custodial — keys on device |
-| **Platforms** | iOS 17+, Android 8+, Chrome (MV3) |
+
+| Platform | Version | Requirements |
+|----------|---------|--------------|
+| iOS | 1.1.15 | iOS 17+ |
+| Android | 1.1.7 | Android 8+ |
+| Chrome | 1.0.3 | Manifest V3 |
 
 Mesh handles TRX energy and bandwidth through a sponsorship relay so everyday USDT transfers do not require a separate gas balance. Fees are itemized before you sign.
 
