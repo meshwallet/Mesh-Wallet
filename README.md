@@ -18,14 +18,6 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
   </a>
 </p>
 
-<p align="center">
-  <sub>
-    <a href="https://meshwallet.app">meshwallet.app</a>
-    &nbsp;·&nbsp;
-    <a href="https://meshwallet.app/support">Support</a>
-  </sub>
-</p>
-
 ---
 
 ## Overview
@@ -186,3 +178,11 @@ Full policy: [SECURITY.md](SECURITY.md)
 ## License
 
 [MIT](LICENSE)
+
+---
+
+<p align="center">
+  <a href="https://meshwallet.app">meshwallet.app</a>
+  &nbsp;·&nbsp;
+  <a href="https://meshwallet.app/support">Support</a>
+</p>
