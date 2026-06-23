@@ -9,10 +9,13 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
 </p>
 
 <p align="center">
-  <a href="https://meshwallet.app"><img src="https://img.shields.io/badge/Website-212121?style=flat-square" alt="Website"></a>
-  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://img.shields.io/badge/App_Store-000000?style=flat-square&logo=apple&logoColor=white" alt="App Store"></a>
-  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://img.shields.io/badge/Chrome-4285F4?style=flat-square&logo=googlechrome&logoColor=white" alt="Chrome"></a>
-  <a href="https://meshwallet.app/support"><img src="https://img.shields.io/badge/Support-333333?style=flat-square" alt="Support"></a>
+  <a href="https://meshwallet.app"><img src="https://img.shields.io/badge/Website-212121?style=flat-square" alt="Website" height="40"></a>
+  &nbsp;
+  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://img.shields.io/badge/App_Store-000000?style=flat-square&logo=apple&logoColor=white" alt="App Store" height="40"></a>
+  &nbsp;
+  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://img.shields.io/badge/Chrome-4285F4?style=flat-square&logo=googlechrome&logoColor=white" alt="Chrome" height="40"></a>
+  &nbsp;
+  <a href="https://meshwallet.app/support"><img src="https://img.shields.io/badge/Support-333333?style=flat-square" alt="Support" height="40"></a>
 </p>
 
 ---
