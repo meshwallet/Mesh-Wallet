@@ -1,13 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="132" height="44" role="img" aria-label="Chrome">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 44" width="132" height="44" role="img" aria-label="Chrome">
   <rect width="132" height="44" fill="#4285F4"/>
-  <g transform="translate(14 10)">
-    <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
-    <path d="M10 3.5a6.5 6.5 0 0 1 5.63 3.25H10V3.5z" fill="#EA4335"/>
-    <path d="M4.37 6.75A6.5 6.5 0 0 1 10 3.5v6.5H4.37z" fill="#FBBC05"/>
-    <path d="M4.37 13.25A6.5 6.5 0 0 1 4.37 6.75H10v6.5H4.37z" fill="#34A853"/>
-    <path d="M10 10h5.63A6.5 6.5 0 0 1 10 16.5V10z" fill="#4285F4"/>
-    <circle cx="10" cy="10" r="3.2" fill="#ffffff"/>
-    <circle cx="10" cy="10" r="2.2" fill="#4285F4"/>
-  </g>
+  <circle cx="24" cy="22" r="10" fill="#ffffff"/>
+  <path d="M24 13.5a8.5 8.5 0 0 1 7.36 4.25H24V13.5z" fill="#EA4335"/>
+  <path d="M16.64 17.75A8.5 8.5 0 0 1 24 13.5v8.5h-7.36z" fill="#FBBC05"/>
+  <path d="M16.64 26.25A8.5 8.5 0 0 1 16.64 17.75H24v8.5h-7.36z" fill="#34A853"/>
+  <path d="M24 22h7.36A8.5 8.5 0 0 1 24 30.5V22z" fill="#4285F4"/>
+  <circle cx="24" cy="22" r="4" fill="#ffffff"/>
+  <circle cx="24" cy="22" r="2.8" fill="#4285F4"/>
   <text x="42" y="28" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="600">Chrome</text>
 </svg>

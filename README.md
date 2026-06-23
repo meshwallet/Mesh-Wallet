@@ -9,13 +9,13 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
 </p>
 
 <p align="center">
-  <a href="https://meshwallet.app"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/website.svg" alt="Website"></a>
+  <a href="https://meshwallet.app"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/website.png" alt="Website" height="44"></a>
   &nbsp;
-  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/app-store.svg" alt="App Store"></a>
+  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/app-store.png" alt="App Store" height="44"></a>
   &nbsp;
-  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/chrome.svg" alt="Chrome"></a>
+  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/chrome.png" alt="Chrome" height="44"></a>
   &nbsp;
-  <a href="https://meshwallet.app/support"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/support.svg" alt="Support"></a>
+  <a href="https://meshwallet.app/support"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/badges/support.png" alt="Support" height="44"></a>
 </p>
 
 ---
