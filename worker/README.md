@@ -1,33 +1,21 @@
-# Worker (source only)
+# Worker
 
-This folder contains the **Mesh sponsorship relay** and **on-chain contracts** as readable source for audit and local development.
+Sponsorship relay and on-chain contracts for Mesh Wallet.
 
-## What this repo is for
+| Directory | Description |
+|-----------|-------------|
+| `mesh-sponsorship-worker/` | Cloudflare Worker — energy delegation, send queue, fee tracking |
+| `mesh-contracts/` | Tron `MeshSendRouter` contract |
 
-- Review server-side relay logic alongside the mobile and extension clients
-- Run `wrangler dev` locally when testing against a dev relay URL
-- Change worker code freely inside this monorepo
-
-## What this repo is **not** for
-
-- **Do not** `wrangler deploy` or publish to Cloudflare from this public tree
-- **Do not** commit ops keys, `wrangler secret` values, or production KV namespace IDs
-
-Production relay (`mesh-sponsorship-relay.meshwallet.workers.dev`) is operated separately. Store builds already point at that URL; this repository only ships the source.
-
-## Layout
-
-| Path | Purpose |
-|------|---------|
-| `mesh-sponsorship-worker/` | Cloudflare Worker relay (TRX energy / send queue) |
-| `mesh-contracts/` | Tron `MeshSendRouter` contract sources |
-
-## Local dev
+## Local development
 
 ```sh
 cd mesh-sponsorship-worker
+cp .dev.vars.example .dev.vars
 npm ci
 npm run dev
 ```
 
-Point app `relayUrl` / `RELAY_URL` at the local `wrangler dev` URL — not production.
+Point client `relayUrl` at the local Wrangler URL.
+
+Production relay: `mesh-sponsorship-relay.meshwallet.workers.dev`

@@ -1,108 +1,119 @@
-# **Mesh** · [meshwallet.app](https://meshwallet.app)
+# Mesh Wallet
 
-**Send USDT without TRX.** A safe, self-custodial **USDT wallet** for [**TRON**](https://trondao.org/) — native mobile (iOS & Android) and **Chrome extension**. One recovery phrase, separate accounts for everyday use.
+**Send USDT on TRON without holding TRX.**
+
+Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Android, plus a Chrome extension. One recovery phrase, multiple accounts, signing on-device.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/banner.png" alt="Mesh — Send USDT without TRX" width="100%" />
+  <img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/banner.png" alt="Mesh Wallet" width="100%" />
 </p>
 
-You keep full control: we **do not** have access to your funds, keys, or data. **Mesh** is built for **clarity** and **reliability**, with a minimal dependency footprint and **zero telemetry** in this open-source tree.
+<p align="center">
+  <a href="https://meshwallet.app">Website</a> ·
+  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229">App Store</a> ·
+  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf">Chrome</a> ·
+  <a href="https://meshwallet.app/support">Support</a>
+</p>
 
 ---
 
-## Why **Mesh**?
+## Overview
 
-**🪙 USDT only**  
-No token discovery, no swap aggregator, no NFT tab. The wallet has one job: move USDT on TRC-20.
+| | |
+|---|---|
+| **Network** | TRON (TRC-20) |
+| **Asset** | USDT |
+| **Custody** | Non-custodial — keys on device |
+| **Platforms** | iOS 17+, Android 8+, Chrome (MV3) |
 
-**⚡ Send without holding TRX**  
-Mesh covers TRX gas behind the scenes. You send USDT; network resources are handled for you. Fees are shown line-by-line before you sign.
-
-**🔐 Separate accounts**  
-Create dedicated receive/spend accounts inside one wallet. Each account has its own TRON address and balance. Your recovery phrase backs them all up.
-
-**📱 Use it wherever you are**  
-**Mesh** works as a native iOS app, Android app, and Chrome extension — so your wallet is always within reach.
-
-**🛡️ Non-custodial by design**  
-Seed phrase generated on-device. Keys never leave your device. No account system, no KYC, no email signup.
-
-**🔍 Open source**  
-Signing and wallet logic are in this repository for review and reproducible builds.
-
-**🧰 Focused feature set**  
-Receive, send, activity history, passcode/biometric lock, multi-account privacy, and background send recovery.
+Mesh handles TRX energy and bandwidth through a sponsorship relay so everyday USDT transfers do not require a separate gas balance. Fees are itemized before you sign.
 
 ---
 
-## 🔗 Links
+## Features
 
-- 🌐 **Website**: [meshwallet.app](https://meshwallet.app)
-- 📲 **App Store**: [Mesh: USDT Wallet](https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229)
-- 🧩 **Chrome extension**: [Mesh: USDT Wallet](https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf)
-- 🛟 **Support**: [meshwallet.app/support](https://meshwallet.app/support)
-- 🔒 **Security**: [docs/SECURITY.md](docs/SECURITY.md)
+- **Gasless USDT sends** — no TRX balance required for typical transfers
+- **Multi-account HD wallet** — separate receive/spend addresses under one seed
+- **Privacy routing** — optional multi-hop sends from dedicated accounts
+- **Background send recovery** — in-flight transfers resume after app restart
+- **Passcode & biometrics** — app lock with secure enclave / keystore where available
+- **Eight languages** — EN, ES, TR, VI, ID, AR, RU, ZH-Hans
 
 ---
 
-## 🛠️ For developers
+## Architecture
 
-### 📑 Table of contents
+```mermaid
+flowchart LR
+  subgraph clients [Clients]
+    iOS[iOS]
+    Android[Android]
+    Chrome[Chrome]
+  end
 
-- [Repository layout](#repository-layout)
-- [Requirements](#requirements)
-- [Local setup](#local-setup)
-- [Chrome extension](#chrome-extension)
-- [iOS](#ios)
-- [Android](#android)
-- [Cloudflare worker](#cloudflare-worker)
-- [Security & audit](#security--audit)
+  subgraph chain [TRON]
+    TronGrid[TronGrid]
+    USDT[USDT TRC-20]
+  end
 
-### Repository layout
+  subgraph relay [Sponsorship relay]
+    Worker[Cloudflare Worker]
+  end
+
+  iOS --> TronGrid
+  Android --> TronGrid
+  Chrome --> TronGrid
+  iOS --> Worker
+  Android --> Worker
+  Chrome --> Worker
+  Worker --> USDT
+  clients --> USDT
+```
+
+Clients sign transactions locally. The relay delegates network resources (energy, activation) and coordinates queued sends — it never holds user keys.
+
+See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for module layout and send flow.
+
+---
+
+## Repository structure
 
 ```
-mesh/
+Mesh-Wallet/
 ├── mobile/
-│   ├── ios/          # SwiftUI iOS app
-│   └── android/      # Kotlin / Jetpack Compose app
+│   ├── ios/                 SwiftUI · Trust Wallet Core
+│   └── android/             Kotlin · Jetpack Compose · Trust Wallet Core
 ├── extension/
-│   └── chrome/       # Chrome MV3 extension (Vite + React)
+│   └── chrome/              React · Vite · MV3
 ├── worker/
-│   ├── mesh-sponsorship-worker/   # Relay source (audit / local dev — not deployed from this repo)
-│   └── mesh-contracts/            # On-chain contract sources
-├── docs/             # Security, build, and audit notes
-└── public/           # README assets
+│   ├── mesh-sponsorship-worker/   Sponsorship relay (Cloudflare Workers)
+│   └── mesh-contracts/            Tron send-router contract
+├── docs/
+│   └── ARCHITECTURE.md
+├── public/                  Brand assets
+├── LICENSE
+└── SECURITY.md
 ```
 
-### Requirements
+---
 
-- **macOS** recommended for iOS builds
-- **Node.js** 20+ for the Chrome extension
-- **Android Studio** / JDK 17 for Android
-- **Xcode** 16+ for iOS
-- **Wrangler** (optional) — local worker dev only
+## Development
 
-### Local setup
+### Prerequisites
 
-Clone the repository and open the platform you need:
+| Tool | Version |
+|------|---------|
+| Xcode | 16+ (iOS) |
+| Android Studio | Ladybug+ / JDK 17 |
+| Node.js | 20+ |
+| Wrangler | optional, worker local dev |
+
+### Clone
 
 ```sh
 git clone https://github.com/meshwallet/Mesh-Wallet.git
 cd Mesh-Wallet
 ```
-
-### Chrome extension
-
-```sh
-cd extension/chrome
-npm ci
-npm run dev      # development build with HMR
-npm run build    # production build → dist/
-```
-
-Load `extension/chrome/dist` as an unpacked extension in `chrome://extensions`.
-
-See [docs/extension.md](docs/extension.md) for architecture notes.
 
 ### iOS
 
@@ -110,35 +121,47 @@ See [docs/extension.md](docs/extension.md) for architecture notes.
 open mobile/ios/Mesh.xcodeproj
 ```
 
-Build and run the **Mesh** scheme on a device or simulator (iOS 17+).
-
-See [docs/mobile-ios.md](docs/mobile-ios.md).
+Run the **Mesh** scheme. Configure TronGrid keys in `mobile/ios/Mesh/Info.plist` (see `Info.plist.example`).
 
 ### Android
 
 ```sh
 cd mobile/android
-cp local.properties.example local.properties   # set sdk.dir
+cp local.properties.example local.properties
 ./gradlew assembleDebug
 ```
 
-See [docs/mobile-android.md](docs/mobile-android.md).
+Trust Wallet Core requires a GitHub Packages token — see `mobile/android/README.md`.
 
-### Sponsorship worker (source only)
+### Chrome extension
 
 ```sh
-cd worker/mesh-sponsorship-worker
+cd extension/chrome
+cp .env.example .env
 npm ci
 npm run dev
 ```
 
-Relay source lives in the repo for audit. **Do not deploy to Cloudflare from this repository** — production already uses `mesh-sponsorship-relay.meshwallet.workers.dev`. See [docs/worker.md](docs/worker.md).
+Load `extension/chrome/dist` as an unpacked extension. Configure keys in `.env`.
 
-### Security
+### Worker (local)
 
-- [SECURITY.md](docs/SECURITY.md) — responsible disclosure
-- [AUDIT.md](docs/AUDIT.md) — review scope for auditors
-- [BUILD-REPRODUCIBILITY.md](docs/BUILD-REPRODUCIBILITY.md) — release builds
+```sh
+cd worker/mesh-sponsorship-worker
+cp .dev.vars.example .dev.vars
+npm ci
+npm run dev
+```
+
+Source for the sponsorship relay and on-chain router. See `worker/README.md`.
+
+---
+
+## Security
+
+Report vulnerabilities to **support@meshwallet.app** — do not open public issues for exploitable findings.
+
+Full policy: [SECURITY.md](SECURITY.md)
 
 ---
 

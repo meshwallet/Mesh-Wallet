@@ -1,41 +1,30 @@
-# Local relay URL (dev only)
+# Local relay setup
 
-This guide is for **local development** with `wrangler dev`. Production deploy is **out of scope** for the public repository.
+## Start worker
 
-## 1. Start the worker locally
-
-```bash
+```sh
 cd worker/mesh-sponsorship-worker
 npm ci
+cp .dev.vars.example .dev.vars
 npm run dev
 ```
 
-Wrangler prints a local URL, typically `http://127.0.0.1:8787`.
+Note the local URL (typically `http://127.0.0.1:8787`).
 
-## 2. Point the app at local relay
+## Point clients
 
-**Chrome** — `extension/chrome/src/core/config.ts`:
+| Platform | Config |
+|----------|--------|
+| Chrome | `VITE_RELAY_URL` in `extension/chrome/.env` |
+| Android | `RELAY_URL` in `app/build.gradle.kts` |
+| iOS | `MESH_SPONSORSHIP_RELAY_URL` in `Info.plist` |
 
-```ts
-relayUrl: 'http://127.0.0.1:8787',
-```
+## Secrets
 
-**Android** — `RELAY_URL` in `app/build.gradle.kts` (debug flavor) or local override.
-
-**iOS** — `MESH_SPONSORSHIP_RELAY_URL` in `Info.plist` for debug builds.
-
-## 3. Secrets for local dev
-
-Create `.dev.vars` in `mesh-sponsorship-worker/` (gitignored):
+Fill in `.dev.vars`:
 
 ```
-MESH_OPS_TRON_PRIVATE_KEY=<64 hex, test ops wallet only>
-RELAY_AUTH_SECRET=<optional>
-TRONGRID_API_KEY=<optional>
+MESH_OPS_TRON_PRIVATE_KEY=
+RELAY_AUTH_SECRET=
+TRONGRID_API_KEY=
 ```
-
-Restart `npm run dev` after changing `.dev.vars`.
-
-## Production
-
-Store and extension builds use the deployed relay at `mesh-sponsorship-relay.meshwallet.workers.dev`. That environment is **not** updated from this GitHub repo.
