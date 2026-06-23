@@ -9,17 +9,11 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
 </p>
 
 <p align="center">
-  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229">
-    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="44">
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf">
-    <img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/chrome-web-store.png" alt="Available in the Chrome Web Store" height="44">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://meshwallet.app"><strong>meshwallet.app</strong></a>
+  <a href="https://meshwallet.app">Website</a>
+  &nbsp;·&nbsp;
+  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229">App Store</a>
+  &nbsp;·&nbsp;
+  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf">Chrome</a>
   &nbsp;·&nbsp;
   <a href="https://meshwallet.app/support">Support</a>
 </p>
