@@ -1,0 +1,13 @@
+{
+  "name": "mesh-contracts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compile": "node scripts/compile.js",
+    "deploy": "node scripts/deploy.js"
+  },
+  "dependencies": {
+    "solc": "^0.8.20",
+    "tronweb": "^6.0.0"
+  }
+}

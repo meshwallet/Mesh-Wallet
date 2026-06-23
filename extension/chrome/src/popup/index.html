@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mesh: USDT Wallet</title>
+    <style>
+      body {
+        margin: 0;
+        min-width: 280px;
+        min-height: 120px;
+        background: #000;
+        color: rgba(255,255,255,0.82);
+        font-family: system-ui, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        gap: 16px;
+      }
+      button {
+        background: #a18dca;
+        color: #fff;
+        border: none;
+        border-radius: 28px;
+        padding: 14px 32px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+      }
+      .logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="/icons/icon48.png" alt="Mesh" />
+    <p>Open Mesh: USDT Wallet</p>
+    <button id="open">Open wallet</button>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

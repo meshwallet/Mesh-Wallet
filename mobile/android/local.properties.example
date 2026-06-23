@@ -1,0 +1,12 @@
+## Copy to local.properties (or run scripts/setup-trustwallet.sh)
+
+sdk.dir=/Users/YOU/Library/Android/sdk
+
+# Trust Wallet Core — GitHub Packages (read:packages token)
+# https://github.com/settings/tokens/new?scopes=read:packages
+gpr.user=YOUR_GITHUB_USERNAME
+gpr.key=YOUR_GITHUB_READ_PACKAGES_TOKEN
+
+# Optional — override empty defaults in app/build.gradle.kts for local dev
+# mesh.trongrid.api.keys=key1,key2
+# mesh.relay.auth=your-relay-bearer-token

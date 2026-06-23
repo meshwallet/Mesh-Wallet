@@ -1,0 +1,5 @@
+# Copy to .dev.vars for local `wrangler dev` (never commit .dev.vars)
+
+MESH_OPS_TRON_PRIVATE_KEY=
+RELAY_AUTH_SECRET=
+TRONGRID_API_KEY=

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Copy values into Info.plist for local/release builds. Do not commit real keys. -->
+	<key>MESH_RELAY_AUTH_SECRET</key>
+	<string>your-relay-bearer-token</string>
+	<key>TRONGRID_API_KEYS</key>
+	<array>
+		<string>your-trongrid-api-key</string>
+	</array>
+</dict>
+</plist>

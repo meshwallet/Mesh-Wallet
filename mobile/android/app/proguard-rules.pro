@@ -1,0 +1,2 @@
+-keep class wallet.core.jni.** { *; }
+-dontwarn wallet.core.jni.**

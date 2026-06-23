@@ -1,0 +1,24 @@
+# Reference config for audit and `wrangler dev` only.
+# Do not run `wrangler deploy` from the public GitHub repository.
+# Secrets (MESH_OPS_TRON_PRIVATE_KEY, RELAY_AUTH_SECRET, TRONGRID_API_KEY) go in .dev.vars — never commit.
+
+name = "mesh-sponsorship-relay"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+TRONGRID_HOST = "https://api.trongrid.io"
+TRONNRG_API_BASE = "https://api.tronnrg.com"
+USDT_CONTRACT = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+MESH_FEE_TREASURY_ADDRESS = "TWorKRZ5B1awmuHcmprsbTvGJrSSzEbdmd"
+MESH_SEND_ROUTER_ADDRESS = "TTDAmwJuKWkhjBjkEt3RGej22z1aJagLYK"
+MESH_AUTO_COLLECT_FEE_VIA_OPS = "false"
+
+[[kv_namespaces]]
+binding = "FEE_OBLIGATIONS"
+id = "00000000000000000000000000000000"
+preview_id = "00000000000000000000000000000000"
+
+[triggers]
+crons = ["*/5 * * * *"]

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MESH_FEE_TREASURY_ADDRESS</key>
+	<string>TWorKRZ5B1awmuHcmprsbTvGJrSSzEbdmd</string>
+	<key>MESH_SEND_ROUTER_ADDRESS</key>
+	<string>TTDAmwJuKWkhjBjkEt3RGej22z1aJagLYK</string>
+	<key>MESH_RELAY_AUTH_SECRET</key>
+	<string></string>
+	<key>MESH_SPONSORSHIP_RELAY_URL</key>
+	<string>https://mesh-sponsorship-relay.meshwallet.workers.dev</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>TRONGRID_API_KEY</key>
+	<string></string>
+	<key>TRONGRID_API_KEYS</key>
+	<array/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Geist-Light.ttf</string>
+		<string>Geist-Regular.ttf</string>
+		<string>Geist-Medium.ttf</string>
+		<string>Geist-SemiBold.ttf</string>
+		<string>Geist-Bold.ttf</string>
+	</array>
+</dict>
+</plist>

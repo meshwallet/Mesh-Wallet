@@ -1,0 +1,50 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets & local config
+.env
+.env.*
+!.env.example
+local.properties
+google-services.json
+GoogleService-Info.plist
+*.keystore
+*.jks
+
+# Node / extension
+node_modules/
+dist/
+*.zip
+.vite/
+
+# Android
+mobile/android/.gradle/
+mobile/android/build/
+mobile/android/app/build/
+mobile/android/local.properties
+mobile/android/.idea/
+mobile/android/captures/
+
+# iOS
+mobile/ios/DerivedData/
+mobile/ios/build/
+mobile/ios/*.xcuserstate
+mobile/ios/.swiftpm/xcode/package.xcworkspace/xcuserdata/
+mobile/ios/Mesh.xcodeproj/xcuserdata/
+mobile/ios/Mesh.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Worker
+worker/**/node_modules/
+worker/**/.wrangler/
+worker/**/.dev.vars
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.cursor/
+
+# CI (use your own pipeline — not shipped in this repo)
+codemagic.yaml
+**/codemagic.yaml

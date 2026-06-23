@@ -1,0 +1,37 @@
+{
+  "name": "mesh-wallet-extension",
+  "version": "1.0.3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/extract-l10n.mjs && tsc && vite build",
+    "extract-l10n": "node scripts/extract-l10n.mjs",
+    "preview": "vite preview",
+    "chrome:reveal": "npm run build && open -R dist/manifest.json",
+    "postbuild": "node scripts/postbuild.mjs"
+  },
+  "dependencies": {
+    "@scure/bip32": "^1.6.0",
+    "@scure/bip39": "^1.4.0",
+    "buffer": "^6.0.3",
+    "jsqr": "^1.4.0",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "tronweb": "^6.0.0",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.31",
+    "@types/chrome": "^0.0.287",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3"
+  }
+}
