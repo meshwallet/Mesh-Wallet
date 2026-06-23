@@ -2,7 +2,13 @@
 
 **Send USDT without TRX.** A safe, self-custodial **USDT wallet** for [**TRON**](https://trondao.org/) — native mobile (iOS & Android) and **Chrome extension**. One recovery phrase, separate accounts for everyday use.
 
-![Mesh — Send USDT without TRX](public/banner.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/logo.png" alt="Mesh" width="120" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/banner.png" alt="Mesh — Send USDT without TRX" width="100%" />
+</p>
 
 You keep full control: we **do not** have access to your funds, keys, or data. **Mesh** is built for **clarity** and **reliability**, with a minimal dependency footprint and **zero telemetry** in this open-source tree.
 
