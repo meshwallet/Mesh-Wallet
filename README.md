@@ -9,12 +9,7 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
 </p>
 
 <div align="center">
-  <table border="0" cellspacing="16" cellpadding="0">
-    <tr>
-      <td><a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="44"></a></td>
-      <td><a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/chrome-web-store.png" alt="Available in the Chrome Web Store" height="44"></a></td>
-    </tr>
-  </table>
+  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="44"></a><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/spacer.png" alt="" width="20" height="44"><a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/chrome-web-store.png" alt="Available in the Chrome Web Store" height="44"></a>
 </div>
 
 ---
