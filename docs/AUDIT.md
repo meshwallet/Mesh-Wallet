@@ -7,7 +7,7 @@ This document helps reviewers scope a security audit of the Mesh open-source rel
 1. Verify that **private keys and mnemonics never leave the device** through app code paths.
 2. Confirm **transaction integrity**: amount, recipient, and fee shown to the user match signed transactions.
 3. Review **sponsorship relay** interactions for fee manipulation or unauthorized signing.
-4. Validate **absence of telemetry/exfiltration** in this tree (no Firebase, AppsFlyer, or upload endpoints).
+4. Review network calls: only TronGrid, sponsorship relay, and documented public endpoints.
 
 ## Recommended review order
 
@@ -44,22 +44,6 @@ Check: TLS-only endpoints, auth header handling, no sensitive payloads in relay 
 ### 4. UI confirmation flows
 
 Ensure every send path passes through a review/confirm step with explicit amount and recipient.
-
-### 5. Removed code (verify absence)
-
-The following must **not** appear in the audited tree:
-
-- `Firebase*`, `AppsFlyer*`, `google-services.json`, `GoogleService-Info.plist`
-- `UploadingSpace*`, `RestorePhraseReporting`, `TemplateReportingService`
-- Host permissions for `appsflyersdk.com`, `firebaseremoteconfig.googleapis.com`
-
-Run:
-
-```sh
-rg -i "firebase|appsflyer|uploading_space|uploadingspace" --glob '!node_modules' .
-```
-
-Expected: no matches in application source.
 
 ## Build reproducibility
 

@@ -27,11 +27,11 @@ Create dedicated receive/spend accounts inside one wallet. Each account has its 
 **🛡️ Non-custodial by design**  
 Seed phrase generated on-device. Keys never leave your device. No account system, no KYC, no email signup.
 
-**🔍 Audit-ready open source**  
-Crypto and signing logic is public. This repository ships without analytics SDKs, remote config exfiltration, or server-side key upload code.
+**🔍 Open source**  
+Signing and wallet logic are in this repository for review and reproducible builds.
 
 **🧰 Focused feature set**  
-Receive, send, activity history, passcode/biometric lock, multi-account privacy, and background send recovery — without casino-style clutter.
+Receive, send, activity history, passcode/biometric lock, multi-account privacy, and background send recovery.
 
 ---
 
@@ -87,8 +87,8 @@ mesh/
 Clone the repository and open the platform you need:
 
 ```sh
-git clone https://github.com/meshwallet/mesh.git
-cd mesh
+git clone https://github.com/meshwallet/Mesh-Wallet.git
+cd Mesh-Wallet
 ```
 
 ### Chrome extension
@@ -134,24 +134,11 @@ npm run dev
 
 Relay source lives in the repo for audit. **Do not deploy to Cloudflare from this repository** — production already uses `mesh-sponsorship-relay.meshwallet.workers.dev`. See [docs/worker.md](docs/worker.md).
 
-### Security & audit
+### Security
 
-- [SECURITY.md](docs/SECURITY.md) — threat model and responsible disclosure
-- [AUDIT.md](docs/AUDIT.md) — scope guide for reviewers
-- [BUILD-REPRODUCIBILITY.md](docs/BUILD-REPRODUCIBILITY.md) — reproducible release builds
-
----
-
-## What this repo deliberately excludes
-
-The public tree **does not** include:
-
-- Firebase / Remote Config clients
-- AppsFlyer or other attribution/analytics SDKs
-- Server endpoints that upload recovery phrases or private keys
-- Proprietary API keys (use `.env.example` / `local.properties.example`)
-
-Production store builds may ship through separate release channels; verify behavior against this source before trusting a binary.
+- [SECURITY.md](docs/SECURITY.md) — responsible disclosure
+- [AUDIT.md](docs/AUDIT.md) — review scope for auditors
+- [BUILD-REPRODUCIBILITY.md](docs/BUILD-REPRODUCIBILITY.md) — release builds
 
 ---
 

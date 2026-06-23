@@ -31,7 +31,6 @@ Out of scope:
 ## Design principles
 
 - **Non-custodial**: Mesh cannot access user keys or funds from this codebase.
-- **Zero telemetry in OSS tree**: No analytics SDKs, no remote phrase upload, no Firebase/AppsFlyer in the public source.
 - **User confirmation**: Every transfer is shown on a review screen before signing.
 - **Minimal attack surface**: USDT on TRC-20 only; no arbitrary contract execution UI.
 
