@@ -84,3 +84,5 @@ Secrets are not committed. Each platform loads keys from local config:
 | Worker | `.dev.vars` |
 
 See `.env.example`, `Info.plist.example`, and `.dev.vars.example` in each subproject.
+
+Release versions: [`versions.json`](../versions.json).
