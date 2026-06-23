@@ -7,7 +7,7 @@ const files = ['website', 'app-store', 'chrome', 'support'];
 
 for (const name of files) {
   const svg = fs.readFileSync(path.join(dir, `${name}.svg`), 'utf8');
-  const resvg = new Resvg(svg, { fitTo: { mode: 'width', value: 272 } });
+  const resvg = new Resvg(svg, { fitTo: { mode: 'height', value: 64 } });
   const png = resvg.render().asPng();
   fs.writeFileSync(path.join(dir, `${name}.png`), png);
   console.log(`wrote ${name}.png`);
