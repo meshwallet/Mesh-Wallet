@@ -9,24 +9,11 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
 </p>
 
 <p align="center">
-  <a href="https://meshwallet.app">Website</a> ·
-  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229">App Store</a> ·
-  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf">Chrome</a> ·
-  <a href="https://meshwallet.app/support">Support</a>
+  <a href="https://meshwallet.app"><img src="https://img.shields.io/badge/Website-meshwallet.app-111111?style=for-the-badge" alt="Website"></a>
+  <a href="https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229"><img src="https://img.shields.io/badge/App_Store-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="App Store"></a>
+  <a href="https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf"><img src="https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome extension"></a>
+  <a href="https://meshwallet.app/support"><img src="https://img.shields.io/badge/Support-Help-333333?style=for-the-badge" alt="Support"></a>
 </p>
-
----
-
-## Downloads
-
-| | |
-|---|---|
-| **Website** | [meshwallet.app](https://meshwallet.app) |
-| **iOS** | [Mesh: USDT Wallet on the App Store](https://apps.apple.com/us/app/mesh-usdt-wallet/id6773052229) |
-| **Chrome** | [Mesh: USDT Wallet extension](https://chromewebstore.google.com/detail/mesh-usdt-wallet/dahjpanhlinmadhfkamhmlcegppdcpcf) |
-| **Support** | [meshwallet.app/support](https://meshwallet.app/support) |
-
-Android build is in this repository (`mobile/android`). Google Play listing is not linked here yet.
 
 ---
 
