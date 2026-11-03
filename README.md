@@ -2,7 +2,7 @@
 
 **Send USDT on TRON without holding TRX.**
 
-Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Android, plus a Chrome extension. One recovery phrase, multiple accounts, signing on-device.
+Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Android. One recovery phrase, multiple accounts, signing on-device.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/meshwallet/Mesh-Wallet/main/public/banner.png" alt="Mesh Wallet" width="100%" />
@@ -26,7 +26,6 @@ Mesh is a self-custody wallet for TRC-20 USDT — native apps for iOS and Androi
 |----------|---------|--------------|
 | iOS | 1.1.15 | iOS 17+ |
 | Android | 1.1.7 | Android 8+ |
-| Chrome | 1.0.3 | Manifest V3 |
 
 Source of truth: [`versions.json`](versions.json) and per-platform `VERSION` files.
 
@@ -136,17 +135,6 @@ cp local.properties.example local.properties
 ```
 
 Trust Wallet Core requires a GitHub Packages token — see `mobile/android/README.md`.
-
-### Chrome extension
-
-```sh
-cd extension/chrome
-cp .env.example .env
-npm ci
-npm run dev
-```
-
-Load `extension/chrome/dist` as an unpacked extension. Configure keys in `.env`.
 
 ### Worker (local)
 
