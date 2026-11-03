@@ -51,7 +51,6 @@ flowchart LR
   subgraph clients [Clients]
     iOS[iOS]
     Android[Android]
-    Chrome[Chrome]
   end
 
   subgraph chain [TRON]
@@ -65,10 +64,8 @@ flowchart LR
 
   iOS --> TronGrid
   Android --> TronGrid
-  Chrome --> TronGrid
   iOS --> Worker
   Android --> Worker
-  Chrome --> Worker
   Worker --> USDT
   clients --> USDT
 ```
